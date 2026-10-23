@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickFix Phone Repairs | Brikama</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #263238;
+            background: #f5f7fa;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #102a43;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38d9a9;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #102a43, #197278);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38d9a9;
+            color: #102a43;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #20c997;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #102a43;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .card h3 {
+            color: #197278;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #087f5b;
+            font-weight: bold;
+            font-size: 19px;
+            margin-top: 12px;
+        }
+
+        .notice {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #596773;
+            text-align: center;
+        }
+
+        .contact {
+            background: #e7f5f4;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #102a43;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 5px 8px;
+                display: inline-block;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>QuickFix Repairs</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Your Phone, Fixed with Care</h2>
+
+        <p>
+            Affordable phone repair services in Brikama.
+            Quality service and friendly support.
+        </p>
+
+        <a href="#services" class="btn">View Our Services</a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="about">
+            <p>
+                QuickFix Repairs is a sample phone-repair business
+                designed to demonstrate how a small local shop can
+                promote its services online. We aim to provide
+                convenient, affordable repairs for everyday phone
+                problems.
+            </p>
+
+            <p>
+                Our example services include screen repairs, battery
+                replacement, charging-port repairs and software support.
+            </p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>Screen Repair</h3>
+                <p>
+                    Repair or replacement for damaged phone screens.
+                    Final cost depends on the phone model.
+                </p>
+                <p class="price">From D800</p>
+            </div>
+
+            <div class="card">
+                <h3>Battery Replacement</h3>
+                <p>
+                    Replace a weak or damaged battery to help your
+                    phone last longer.
+                </p>
+                <p class="price">From D500</p>
+            </div>
+
+            <div class="card">
+                <h3>Charging-Port Repair</h3>
+                <p>
+                    Diagnosis and repair of charging problems
+                    and loose charging ports.
+                </p>
+                <p class="price">From D350</p>
+            </div>
+
+            <div class="card">
+                <h3>Software Support</h3>
+                <p>
+                    Help with software errors, updates and
+                    basic phone troubleshooting.
+                </p>
+                <p class="price">From D200</p>
+            </div>
+
+        </div>
+
+        <p class="notice">
+            Sample prices for demonstration only. Actual prices,
+            services and availability must be confirmed with the business.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p><strong>Location:</strong> Brikama, The Gambia</p>
+        <p><strong>Phone:</strong> To be confirmed</p>
+        <p><strong>Opening Hours:</strong> To be confirmed</p>
+
+        <p>
+            Contact us to ask about a repair or request a price estimate.
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2026 QuickFix Repairs.
+            Sample website for educational purposes.
+        </p>
+    </footer>
+
+</body>
+</html>
