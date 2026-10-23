@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Register for an Examination</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #174a7e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #103456;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #174a7e;
+        }
+
+        .step {
+            background-color: #f0f5fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #174a7e;
+            border-radius: 5px;
+        }
+
+        .important {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #174a7e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>How to Register for an Examination</h1>
+        <p>A simple guide for first-time applicants</p>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#steps">Registration Steps</a>
+        <a href="#tips">Important Tips</a>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Registering for an examination is an important process for
+                students who want to take an official test. This guide
+                explains the steps to follow to complete registration
+                successfully.
+            </p>
+        </section>
+
+        <section id="steps">
+            <h2>Steps to Register</h2>
+
+            <div class="step">
+                <h3>Step 1: Check the Requirements</h3>
+                <p>
+                    Find out whether you are eligible for the examination.
+                    Check the registration deadline, entry requirements,
+                    and registration fee.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 2: Prepare Your Documents</h3>
+                <p>
+                    Gather the required documents, such as an identification
+                    document, passport-size photographs, and academic records,
+                    if requested.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 3: Complete the Registration Form</h3>
+                <p>
+                    Obtain the form from the official examination website
+                    or an authorized registration centre. Fill in your
+                    details carefully.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 4: Pay the Registration Fee</h3>
+                <p>
+                    Pay the required fee using an approved payment method.
+                    Keep your payment receipt as proof.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 5: Submit Your Application</h3>
+                <p>
+                    Review your information and submit the completed form
+                    with all required documents before the deadline.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 6: Confirm Your Registration</h3>
+                <p>
+                    Check for a confirmation message or receipt. Keep your
+                    examination slip or admission card safe if one is issued.
+                </p>
+            </div>
+        </section>
+
+        <section id="tips">
+            <h2>Important Tips</h2>
+
+            <div class="important">
+                <ul>
+                    <li>Register before the deadline.</li>
+                    <li>Provide accurate personal information.</li>
+                    <li>Use official registration channels.</li>
+                    <li>Keep copies of important documents.</li>
+                    <li>Keep your payment receipt safe.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>
+                Examination registration becomes easier when you follow
+                the correct steps. Prepare your documents early, complete
+                the form carefully, and confirm that your application
+                has been accepted.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Examination Registration Guide</p>
+    </footer>
+
+</body>
+</html>
