@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power is back: do these in order</title>
+<style>
+  /* Designed for A4 portrait, black ink only. Works on any office printer. */
+  @page { size: A4 portrait; margin: 9mm; }
+
+  :root {
+    --ink: #000;
+    --paper: #fff;
+    --soft: #e6e6e6;       /* prints as light grey; never carries meaning alone */
+    font-size: 16px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: #ddd;
+    color: var(--ink);
+    font-family: "Arial Narrow", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .sheet {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 9mm;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    gap: 3.2mm;
+  }
+
+  /* ---------- Headline: the one loud thing ---------- */
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 5mm 6mm 4.5mm;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 40pt;
+    line-height: 0.98;
+    font-weight: 900;
+    letter-spacing: -0.5pt;
+  }
+  header p {
+    margin: 2.5mm 0 0;
+    font-size: 15pt;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  /* ---------- Steps ---------- */
+  ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3mm; }
+
+  .step {
+    display: grid;
+    grid-template-columns: 17mm 1fr 11mm;
+    align-items: center;
+    column-gap: 4mm;
+    border: 2.2pt solid var(--ink);
+    padding: 3mm 4mm 3mm 3mm;
+    break-inside: avoid;
+  }
+  .num {
+    font-size: 44pt;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+  }
+  .step h2 {
+    margin: 0;
+    font-size: 20pt;
+    line-height: 1.05;
+    font-weight: 900;
+  }
+  .step p {
+    margin: 1.2mm 0 0;
+    font-size: 14pt;
+    line-height: 1.22;
+    font-weight: 600;
+  }
+  .tick {
+    width: 10mm; height: 10mm;
+    border: 2.2pt solid var(--ink);
+    justify-self: end;
+  }
+
+  /* Step 3 is a stop-gate: thicker, shaded, and says STOP in words */
+  .step.gate {
+    border-width: 4pt;
+    background: var(--soft);
+  }
+  .step.gate .stopword {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0 2mm;
+    margin-right: 1mm;
+  }
+
+  /* The order of step 5 is the whole point, so show it as a ladder */
+  .ladder {
+    list-style: none;
+    margin: 1.8mm 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    font-size: 13pt;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .ladder li {
+    flex: 1;
+    border: 1.8pt solid var(--ink);
+    padding: 1.6mm 1.4mm;
+    margin-left: -1.8pt;
+    text-align: center;
+  }
+  .ladder li:first-child { margin-left: 0; }
+  .ladder li small {
+    display: block;
+    font-size: 10pt;
+    font-weight: 700;
+    margin-top: 0.6mm;
+  }
+  .ladder li:last-child { background: var(--soft); }
+
+  /* ---------- Bottom strip ---------- */
+  .after {
+    border: 2.2pt dashed var(--ink);
+    padding: 3mm 4mm;
+    break-inside: avoid;
+  }
+  .after h3 { margin: 0 0 1mm; font-size: 16pt; font-weight: 900; }
+  .after p { margin: 0; font-size: 13.5pt; font-weight: 600; line-height: 1.22; }
+
+  footer {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm;
+    font-size: 13pt;
+    font-weight: 800;
+  }
+  footer div { border-bottom: 2pt solid var(--ink); padding-bottom: 0.5mm; min-height: 9mm; display: flex; align-items: flex-end; }
+
+  /* ---------- Screen preview only ---------- */
+  @media screen {
+    body { padding: 6mm 0; }
+    .sheet { box-shadow: 0 0 0 1px #aaa, 0 6px 24px rgba(0,0,0,.18); }
+  }
+  @media screen and (max-width: 215mm) {
+    .sheet { width: 100%; min-height: 0; }
+    header h1 { font-size: 30pt; }
+  }
+  @media print {
+    html, body { background: #fff; }
+    body { padding: 0; }
+    .sheet { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; height: 279mm; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <header>
+    <h1>POWER IS BACK.<br>DON’T SWITCH EVERYTHING ON.</h1>
+    <p>Do the steps in order. If the lights flicker or go off again, start over at step 1.</p>
+  </header>
+
+  <ol>
+    <li class="step">
+      <div class="num">1</div>
+      <div>
+        <h2>Wait 5 minutes. Touch nothing.</h2>
+        <p>Power often returns, drops, then surges. Lights must stay steady for the full 5 minutes.</p>
+      </div>
+      <div class="tick" aria-hidden="true"></div>
+    </li>
+
+    <li class="step">
+      <div class="num">2</div>
+      <div>
+        <h2>Used a generator? Do this first.</h2>
+        <p>Turn off what it powers. Move the change-over switch to MAINS. Then stop the generator. Never leave both connected. No generator: go to step 3.</p>
+      </div>
+      <div class="tick" aria-hidden="true"></div>
+    </li>
+
+    <li class="step gate">
+      <div class="num">3</div>
+      <div>
+        <h2><span class="stopword">STOP</span>Smell, look, listen.</h2>
+        <p>Burning smell, sparks, buzzing, wet sockets or a tripped breaker? Leave the main switch OFF. Call an electrician.</p>
+      </div>
+      <div class="tick" aria-hidden="true"></div>
+    </li>
+
+    <li class="step">
+      <div class="num">4</div>
+      <div>
+        <h2>Main switch ON.</h2>
+        <p>Nothing else yet. Check that any light that comes on stays steady.</p>
+      </div>
+      <div class="tick" aria-hidden="true"></div>
+    </li>
+
+    <li class="step">
+      <div class="num">5</div>
+      <div>
+        <h2>Switch on one at a time, 1 minute apart.</h2>
+        <ol class="ladder">
+          <li>Fridge &amp; freezer<small>first</small></li>
+          <li>Lights<small>then</small></li>
+          <li>Fans, water pump<small>then</small></li>
+          <li>AC, kettle, iron<small>then</small></li>
+          <li>TV, computer, router<small>last</small></li>
+        </ol>
+      </div>
+      <div class="tick" aria-hidden="true"></div>
+    </li>
+
+    <li class="step">
+      <div class="num">6</div>
+      <div>
+        <h2>Fridge was off more than 4 hours?</h2>
+        <p>Throw away meat, fish, milk and cooked food. If unsure, throw it out.</p>
+      </div>
+      <div class="tick" aria-hidden="true"></div>
+    </li>
+  </ol>
+
+  <section class="after">
+    <h3>Next time the power goes OFF:</h3>
+    <p>Switch the main breaker off. Unplug TV, computer and router. Keep the fridge door shut.</p>
+  </section>
+
+  <footer>
+    <div>Electrician:</div>
+    <div>Phone:</div>
+  </footer>
+
+</main>
+</body>
+</html>
